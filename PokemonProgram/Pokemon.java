@@ -61,9 +61,14 @@ public class Pokemon
     {
         return type1;
     }
+
+    public String getPokemonDescription()
+    {
+        return pokemonInfo[9];
+    }
     
 
-    public void getCoolStats()
+    public static void getCoolStats()
     {
         double weakestAVG = Integer.MAX_VALUE;
         String weakestName = "";
@@ -158,9 +163,16 @@ public class Pokemon
             }
         }
         
-        outputType = outputType.substring(0,outputType.length() - 2);
+        if (!(outputType.equals("")))
+        {
+            outputType = outputType.substring(0,outputType.length() - 2); // Removes the last ,
+            System.out.println(outputType);
+        }
         
-        System.out.println(outputType);
+        else
+        {
+            System.out.println("No Pokemon has that type.");
+        }
     }
     
     public static void findAllSubType(String type)

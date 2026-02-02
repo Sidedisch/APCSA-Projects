@@ -19,6 +19,12 @@ public class PokemonArray {
         String[] temp = getInfoFromNum(num - 1);
         return temp[1];
     }
+
+    
+    public static String getDescription(int num)
+    {
+        return pokemonList[num - 1].getPokemonDescription();
+    }
     
     
     public static Pokemon[] getArray()
@@ -96,6 +102,7 @@ public class PokemonArray {
         }
         
         printPokemon(pkmNum);
+        System.out.println(getDescription(pkmNum));
         Pokemon.makeRandomTeam();
         
         String[] types = {"Fire", "Water", "Grass", "Flying", "Electric", "Dragon", "Fairy", "Poion", "Psychic", "Normal", "Ghost", "Fighting", "Ice", "Rock", "Ground"};
@@ -153,7 +160,7 @@ public class PokemonArray {
             }
         }
         
-        //myPokemon.getCoolStats();
+        Pokemon.getCoolStats();
         
         
     }
