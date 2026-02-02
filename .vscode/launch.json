@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "PokemonArray",
+            "request": "launch",
+            "mainClass": "PokemonProgram.PokemonArray",
+            "projectName": "VS Code Workspace_4fb9762d"
+        },
+        {
+            "type": "java",
+            "name": "PokemonArray",
+            "request": "launch",
+            "mainClass": "PokemonClass.PokemonArray",
+            "projectName": "VS Code Workspace_4fb9762d"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
